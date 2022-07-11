@@ -4,6 +4,11 @@ import "./Primary_info.css"
 import Primary_info_form from './Primary_info_form';
 import Secondary_info_form from './Secondary_info_form';
 import Education_form from './Education_form';
+import Address_details_form from './Address_details_form';
+import Bank_details_form from './Bank_details_form';
+import Technical_skills_form from './Technical_skills_form';
+import Experience_form from './Experience_form';
+import Contact_form from './Contact_form';
 
 
 const { Step } = Steps;
@@ -22,23 +27,23 @@ const steps = [
   },
   {
     title: 'Address Details',
-    content: 'Lvjdfklvf',
+    content: <Address_details_form/>,
   },
   {
     title: 'Bank Details',
-    content: 'Last-content',
+    content: <Bank_details_form/>,
   },
   {
     title: 'Technical Skills',
-    content: 'Last-content',
+    content: <Technical_skills_form/>,
   },
   {
     title: 'Experience',
-    content: 'Last-content',
+    content: <Experience_form/>,
   },
   {
     title: 'Contact',
-    content: 'Last-content',
+    content: <Contact_form/>,
   },
 ];
 

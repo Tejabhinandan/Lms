@@ -60,7 +60,7 @@ function MentorNav() {
           <Menu mode="horizontal" />
         </Header>
         <Layout>
-          <Sider width={75} className="site-layout-background bg-white ">
+          <Sider width={115} className="site-layout-background bg-white ">
             <Menu mode="inline" />
             <div>
               <Link to={""}><button className="dashbtn"><p className="dashp">Dashboard</p></button></Link>

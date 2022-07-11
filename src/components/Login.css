@@ -1,55 +1,115 @@
-*{
-    font-family: 'Montserrat', sans-serif;
-font-family: 'Open Sans', sans-serif;
-}
 #mainDiv{
-    background: url("../../public/Assets/black_BG@2x.png");
-    height: 625px;
-    width: 100%;
-    background-size: cover;
+    background-image: url("../../public/Assets/IMG_0534.png");
+    opacity:initial;
 }
-#subDiv{
-    background: url("../../public/Assets/light_bg@2x.png");
-    height: 625px;
+#imagecontainer{
+   background-image: url("../../public/Assets/wepik-2022319-214333-1.png");
+   background-size:cover;
+    background-color: black;
+    height: 657px;
     width: 100%;
-    opacity: 0.6;
-    background-size:100%;
-}
-#darkimg{
-    background-image: url("../../public/Assets/Mainbg@2x.png");
-    position: absolute;
-    top: 67px;
-    left: 300px;
-    height: 500px;
-    width: 60%;
-    background-size: cover;
-    border: 1px solid green;
     display: flex;
-    direction: rtl;
+    align-items: center;
+    justify-content: center;
 }
-#logodiv{
-    border: 1px solid red;
-    background-color: rgba(255,255,255,0.4);
-    width:325px;
+/* #img1{
+    height: 550px;
+    width: 100%;
+    float: left;
+} */
 
-}
-#logoimg{
-/* border: 1px solid orange; */
-padding: 20px;
-height: 91px;
-}
+.logdiv{
+    background-color: black;
+    background-image: url("../../public/Assets/black_BG@2x.png");
+    background-origin: content-box;
+   background-size: 90%;
 
-#loginH{
-text-align: center;
-font: normal normal normal 37px/191px Abril Fatface;
-letter-spacing: 0px;
-opacity: 1;
-color: #FFAA17;
-
-}
-#card{
-    position: absolute;
-    bottom: 100px;
-    left: 62%;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 550px;
+    width: 70%;
+    background-repeat:no-repeat;
+    overflow: auto;
 }
 
+#img3{
+    height: 100px;
+    width: 200px;
+    margin-left: 90px;
+    margin-top: 50px;
+}
+
+#loginDetails{
+   
+    float: right;
+   background: #3b3a3a 0% 0% no-repeat padding-box;
+   opacity: 10;
+   backdrop-filter: blur(11px);
+   -webkit-backdrop-filter: blur(11px);
+  
+
+}
+h4{
+    margin-left:150px;
+    font-family: 'Abril Fatface', cursive;
+    color: #FFAA17;
+   
+}
+label{
+    font-size: 12px;
+    margin-left: 90px;
+    color: #FFFFFF;
+}
+#password{
+    border: 1px solid #C4C4C4;
+    margin-left: 90px;
+    height: 35px;
+
+   
+}
+#buttonDiv{
+  
+    margin-top: 20px;
+    margin-left: 70px;
+    width: 220px;
+    border: 1px solid #FAA81D;
+    border-radius: 5px;
+    align-items: center;
+}
+
+#loginButton{
+    
+    background-color: #FAA81D;
+    width: 50%;
+    font-family: 'Agrandir Variable';
+    color: #FFFFFF;
+}
+#cancelButton{
+    width: 50%;
+    font-family: 'Agrandir Variable';
+    color: #FFFFFF;
+}
+
+#textdiv1{
+    color: #FFFFFF;
+    /* border: 1px solid red; */
+    margin-top: 400px;
+    margin-left: 20px;
+    font: var(--unnamed-font-style-normal) normal medium 80px/96px Agrandir Variable;
+    font-size: 40px;
+    
+}
+
+#linediv{
+    border: 1px solid #E7E7E7;
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 80%;
+    
+}
+
+#textdiv{
+    display: flex;
+    font-size: 10px;
+    color: #E7E7E7;
+}

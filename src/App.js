@@ -18,12 +18,16 @@ import Primary_info_form from './components/Employee/Primary_info_form';
 import Secondary_info_form from './components/Employee/Secondary_info_form';
 
 function App() {
+
   return (
     <div className="App">
-   {/* <Login/> */}
+   
   {/* <BrowserRouter>
-  <Mainnav/>
   <Routes>
+<Route path="/" element={<Login/>}/>
+<Route path="/Mainnav" element={<Mainnav/>}/>
+<Route path="/MentorNav" element={<MentorNav/>}/>
+<Route path="/EmpNav" element={<EmpNav/>}/>
 <Route path="/batchlist2"element={<Batchlist2/>}/>
 <Route path="/mentor"element={<Mentor/>}/>
 <Route path="/request"element={<Request/>}/>
@@ -38,7 +42,12 @@ function App() {
   </Routes>
   </BrowserRouter> */}
   {/* <EmpNav/> */}
-  <Primary_Info/>
+  {/* <BrowserRouter>
+  <Routes>
+<Route path='/Primary_info' element={<Primary_Info/>}/>
+
+  </Routes>
+  </BrowserRouter> */}
   
   {/* <Primary_info_form/> */}
 

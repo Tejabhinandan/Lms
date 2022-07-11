@@ -1,9 +1,18 @@
 import React, { useState } from 'react'
 import "./Request.css"
 import { Button, Input, Layout,Modal,Table, Tag} from "antd";
+import Approve from './Approve';
+import Reject from './Reject';
 const {Content } = Layout;
 
 function Request() {
+  const [lgShow, setlgShow] = useState(false);
+  const handleClose = () => setlgShow(false);
+
+  const [show,setshow] = useState(false)
+  const handleShowClose = () => setshow(false);
+
+
   const [isEditing, setIsEditing] = useState(false);
   const [editingStudent, setEditingStudent] = useState(null);
   const [dataSource, setDataSource] = useState([
@@ -59,12 +68,8 @@ function Request() {
 
           <>
             
-              <Button onClick={() => {
-                onEditStudent(record);
-              }} className="approve">Approve</Button>&nbsp;&nbsp;
-              <Button onClick={() => {
-                onEditStudent(record);
-              }}
+              <Button onClick={() =>setshow(true)} className="approve">Approve</Button>&nbsp;&nbsp; 
+              <Button onClick={()=>setlgShow(true)}
               className="reject" color="red">Reject</Button>
               
           </>
@@ -137,33 +142,18 @@ function Request() {
               resetEditing();
             }}
           >
-            <Input
-              value={editingStudent?.name}
-              onChange={(e) => {
-                setEditingStudent((pre) => {
-                  return { ...pre, name: e.target.value };
-                });
-              }}
-            />
-            <Input
-              value={editingStudent?.email}
-              onChange={(e) => {
-                setEditingStudent((pre) => {
-                  return { ...pre, email: e.target.value };
-                });
-              }}
-            />
-            <Input
-              value={editingStudent?.address}
-              onChange={(e) => {
-                setEditingStudent((pre) => {
-                  return { ...pre, address: e.target.value };
-                });
-              }}
-            />
+           
+           
           </Modal>
               </Content>
             </Layout>
+            <Approve 
+             show={show}
+             handleShowClose={handleShowClose}/>
+             <Reject 
+              lgShow={lgShow}
+              handleClose={handleClose}/>
+             
           </Layout></div>
   )
 }

@@ -69,7 +69,7 @@ function EmpNav() {
           <Sider width={75} className="site-layout-background bg-white ">
             <Menu mode="inline" />
             <div>
-            <button className="Empdashhbtn"><p className="Empdashp">Dashboard</p></button>
+           <Link to={"./Primary_info"}><button className="Empdashhbtn"><p className="Empdashp">Dashboard</p></button></Link>
            {/* <Link to={"./mentorbatchlist"}><button className="batchbtn"><p className="mbatchp">Batch</p></button></Link> */}
             </div>
           </Sider>

@@ -1,6 +1,5 @@
 import React from 'react'
 import { MinusCircleOutlined, PlusOutlined} from '@ant-design/icons';
-import { CaretRightOutlined } from '@ant-design/icons';
 import "./Primart_info_form.css"
 import { Form, Input, Space,Select,Col,Row, Button } from 'antd';
 import { Collapse } from 'antd';
@@ -12,46 +11,30 @@ function Primary_info_form() {
     
   return (
     <div>
-
-<Collapse bordered={false} defaultActiveKey={['1']}>
-<Panel header="Eduction Type" key="1">
-    <Form>
-    {(fields, { add, remove }) => (
-      <>
-       {fields.map(({ key, name, ...restField }) => (
-      <Space>
-       <Row 
-        {...restField}
-        name={[name, 'first']}>
-       <Col span={8} push={2} ><Form.Item id='txt' label="PAN No."><Input /></Form.Item></Col >
-       <Col span={8} offset={6}><Form.Item label="Aadhar No."><Input /></Form.Item></Col >
-     </Row>
-     <Row>
-       <Col span={8} push={2} ><Form.Item label="Father Name"><Input /></Form.Item></Col >
-       <Col span={8} offset={6}><Form.Item label="Mother Name"><Input /></Form.Item></Col >
-     </Row>
-     <Row>
-       <Col span={8} push={2} ><Form.Item label="Spouse Name"><Input /></Form.Item></Col >
-       <Col span={8} offset={6}><Form.Item label="Passport No."><Input /></Form.Item></Col >
-     </Row>
-     <Row>
-       <Col span={8} push={2} ><Form.Item label="Marital Status">  <Select style={{width:"100%"}}  placeholder=""></Select></Form.Item></Col >
-      
-     </Row>
-      <Button type="dashed" onClick={() => add()} block icon={<PlusOutlined />}>
-                Add field
-              </Button>
-   <MinusCircleOutlined onClick={() => remove(name)} />
-   </Space>
-   ))}
-    </>
-)
+    <Collapse defaultActiveKey={['1']} >
+      <Panel header="Education Details" key="1" >
+    <Form layout='vertical'>
+            <Row>
+              <Col span={8} push={2} ><Form.Item label="Education Type"><Select style={{width:"100%"}}  placeholder=""></Select></Form.Item></Col >
+              <Col span={8} offset={6}><Form.Item label="Year Of Passing"><Input /></Form.Item></Col >
+            </Row>
+            <Row>
+              <Col span={8} push={2} ><Form.Item label="Percentage (%)"><Input /></Form.Item></Col >
+              <Col span={8} offset={6}><Form.Item label="University Name"><Select style={{width:"100%"}}  placeholder=""></Select></Form.Item></Col >
+            </Row>
+            <Row>
+              <Col span={8} push={2} ><Form.Item label="Institute Name"><Input /></Form.Item></Col >
+              <Col span={8} offset={6}><Form.Item label="Specialization"><Input /></Form.Item></Col >
+            </Row>
+            <Row>
+              <Col span={8} push={2} ><Form.Item label="State"><Select style={{width:"100%"}}  placeholder=""></Select></Form.Item></Col >
+            </Row>
+    </Form> 
+    </Panel>  
+    </Collapse>   
+  </div>
+  )
 }
-    </Form>
-    </Panel>
-    </Collapse>
-    </div>
-  )}
 
 
 export default Primary_info_form

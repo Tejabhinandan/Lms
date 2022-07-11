@@ -25,7 +25,7 @@ font-family: 'Open Sans', sans-serif;
 }
 .approve{
     border-radius: 7px;
-    background-color:#00811A80 ;
+    background-color:#00811A80 !important;
     border: #00811A80;
     color: #00811A;
     font-weight: 200px;
@@ -33,21 +33,21 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .approve:hover{
-    background-color:#00811A;
-    color: white;
+    background-color:#00811A !important;
+    color: white !important;
     font-weight: 200px;
     
 }
 
 .reject{
     border-radius: 7px;
-    background-color:#B2000C80 ;
-    border: #B2000C80;
+    background-color:#B2000C80 !important;
+    border: #B2000C80 !important;
     font-weight: 200px;
     color: #CE000E;
 }
 .reject:hover{
-    background-color:#CE000E;
+    background-color:#CE000E !important;
     color: white;
     font-weight: 200px;
 
