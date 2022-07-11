@@ -3,7 +3,7 @@
     opacity:initial;
 }
 #imagecontainer{
-   background-image: url("../../public/Assets/wepik-2022319-214333-1.png");
+   background-image: url("../../public/Assets/light_bg@2x.png");
    background-size:cover;
     background-color: black;
     height: 657px;
@@ -20,7 +20,7 @@
 
 .logdiv{
     background-color: black;
-    background-image: url("../../public/Assets/black_BG@2x.png");
+    background-image: url("../../public/Assets/wepik-2022319-214333-1.png");
     background-origin: content-box;
    background-size: 90%;
 

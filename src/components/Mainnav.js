@@ -1,6 +1,6 @@
 import { Breadcrumb, Button, Input, Layout, Menu,Modal,Table} from "antd";
 import "./Mainnav.css";
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 const { Header, Content, Sider } = Layout;
 
 
@@ -45,9 +45,9 @@ function Mainnav() {
           <Sider width={75} className="site-layout-background bg-white ">
             <Menu mode="inline" />
             <div>
-              <Link to={"./batchlist2"}><button className="batchbtn"><p className="batchp">Batch</p></button></Link>
-           <Link to={"./mentor"}><button className="mentorbtn"><p className="mentorp">Mentor</p></button></Link>
-           <Link to={"./request"}><button className="reqbtn"><p className="reqp">Requset</p></button></Link>           
+              <Link to={"batchlist2"}><button className="batchbtn"><p className="batchp">Batch</p></button></Link>
+           <Link to={"mentor"}><button className="mentorbtn"><p className="mentorp">Mentor</p></button></Link>
+           <Link to={"request"}><button className="reqbtn"><p className="reqp">Requset</p></button></Link>           
         
             </div>
           </Sider>
@@ -78,6 +78,7 @@ function Mainnav() {
           </Layout>
         </Layout>
       </Layout>
+      <Outlet/>
 
     </div>
   )

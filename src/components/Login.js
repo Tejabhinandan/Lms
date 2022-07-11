@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom';
 import "./Login.css";
 
 function Login() {
-  const [Auth, setAuth] = useState({
+  const [Login, setLogin] = useState({
     userName:"",
     passWord:""
   })
@@ -21,8 +21,8 @@ function Login() {
 
   let UpdateUserData=(event)=>{
     
-    setAuth({
-        ...Auth,
+    setLogin({
+        ...Login,
         [event.target.name]:event.target.value
     })
 
@@ -31,13 +31,13 @@ function Login() {
   const navigate=useNavigate()
 
   const navigateToAdmin=()=>{
-    if(Auth.userName==="admin"){
+    if(Login.userName==="admin"){
     navigate("/Mainnav")
     }
-     if(Auth.userName==="mentor"){
+     if(Login.userName==="mentor"){
       navigate("/MentorNav")
     }
-    if(Auth.userName==="employee"){
+    if(Login.userName==="employee"){
       navigate("/EmpNav")
     }
    
@@ -59,7 +59,7 @@ function Login() {
                 <div className="col-12">
               <img
                 id="img3"
-                src="./login/Artboard – 2@2x.png"
+                src="./Assets/Artboard@2x.png"
                 className="img-fluid"
                 alt="..."
               />

@@ -22,17 +22,18 @@ function App() {
   return (
     <div className="App">
    
-  {/* <BrowserRouter>
+  <BrowserRouter>
   <Routes>
 <Route path="/" element={<Login/>}/>
-<Route path="/Mainnav" element={<Mainnav/>}/>
-<Route path="/MentorNav" element={<MentorNav/>}/>
-<Route path="/EmpNav" element={<EmpNav/>}/>
-<Route path="/batchlist2"element={<Batchlist2/>}/>
-<Route path="/mentor"element={<Mentor/>}/>
-<Route path="/request"element={<Request/>}/>
+<Route path="/Mainnav" element={<Mainnav/>}>
+<Route path="batchlist2"element={<Batchlist2/>}/>
+<Route path="mentor"element={<Mentor/>}/>
+<Route path="request"element={<Request/>}/>
+</Route>
   </Routes>
-  </BrowserRouter> */}
+  </BrowserRouter>
+{/* <Route path="/EmpNav" element={<EmpNav/>}/> */}
+{/* <Route path="/MentorNav" element={<MentorNav/>}/> */}
   {/* <ResetPassword/> */}
   {/* <BrowserRouter>
   <MentorNav/>
@@ -42,7 +43,7 @@ function App() {
   </Routes>
   </BrowserRouter> */}
   
-  <BrowserRouter>
+  {/* <BrowserRouter>
   <Routes>
 
 <Route path='/' element={<Primary_Info/>}/>
@@ -50,7 +51,7 @@ function App() {
 
   </Routes>
   </BrowserRouter>
-  
+   */}
   {/* <Primary_info_form/> */}
 
     </div>
