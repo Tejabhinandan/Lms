@@ -41,13 +41,15 @@ function App() {
     <Route path='/MentorEmpList' element={<MentorEmpList/>}/>
   </Routes>
   </BrowserRouter> */}
-  {/* <EmpNav/> */}
-  {/* <BrowserRouter>
+  
+  <BrowserRouter>
   <Routes>
-<Route path='/Primary_info' element={<Primary_Info/>}/>
+
+<Route path='/' element={<Primary_Info/>}/>
+<Route path='/EmpNav' element={<EmpNav/>}/>
 
   </Routes>
-  </BrowserRouter> */}
+  </BrowserRouter>
   
   {/* <Primary_info_form/> */}
 

@@ -9,6 +9,7 @@ import Bank_details_form from './Bank_details_form';
 import Technical_skills_form from './Technical_skills_form';
 import Experience_form from './Experience_form';
 import Contact_form from './Contact_form';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const { Step } = Steps;
@@ -48,6 +49,11 @@ const steps = [
 ];
 
 function Primary_Info() {
+
+  const navigate=useNavigate()
+  function navigateToHome(){
+    navigate("/EmpNav")
+  }
   const [current, setCurrent] = useState(0);
 
   const next = () => {
@@ -79,9 +85,10 @@ function Primary_Info() {
         </Button>
       )}
       {current === steps.length - 1 && (
-        <Button type="primary" onClick={() => message.success('Processing complete!')}>
+        <Button type="primary" onClick={navigateToHome}>
           Submit
         </Button>
+      
       )}
       {current 
         < steps.length - 1 && (
