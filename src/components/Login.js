@@ -74,7 +74,7 @@ function Login() {
               id="password"
               aria-label="Employee ID"
               name="userName"
-              value={Auth.userName}
+              value={Login.userName}
               onChange={(event)=>{UpdateUserData(event)}}
               style={{ borderRadius: 5 }}
             />
@@ -83,7 +83,7 @@ function Login() {
             <label id="inputLabels">Password</label><br/>
             <input id="password" style={{ borderRadius: 5 }} 
              name="passWord"
-             value={Auth.password}
+             value={Login.password}
              onChange={(event)=>{UpdateUserData(event)}}/>
             </form>
             <br/>

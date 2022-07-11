@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useNavigate } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import "./MentorBatchlist.css"; 
 import { Button, Input, Layout,Popover,Table, Tooltip} from "antd";
 import AttendanceModal from './AttendanceModal';
@@ -136,7 +136,7 @@ const handleClose=()=>{
             >
                 <div className='batchl'>
                     <p className='par'>Batch list</p>
-                    <Input className='searc' size='small' placeholder="Search" prefix={<img height="13px" src='./Page_2/Xnix-Line-Search 5@2x.png' alt='o'/>} />
+                    <Input className='searc' size='small' placeholder="Search" prefix={<img height="13px" src="./Page_2/Xnix-Line-Search 5@2x.png" alt='Arrow'/>} />
                 </div>
       <Table columns={columns} dataSource={dataSource} rowSelection={true}></Table>
      
@@ -147,6 +147,7 @@ const handleClose=()=>{
               lgShow={lgShow}
               handleClose={handleClose}/>
               </Layout>
+              <Outlet/>
     </div>
   )
 }

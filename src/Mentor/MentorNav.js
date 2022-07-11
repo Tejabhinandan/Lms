@@ -1,6 +1,6 @@
 import { Avatar, Breadcrumb, Button, Dropdown, Input, Layout, Menu,Modal,Space,Table} from "antd";
 import "./MentorNav.css";
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import { DownOutlined } from "@ant-design/icons";
 const { Header, Content, Sider } = Layout;
 
@@ -95,6 +95,7 @@ function MentorNav() {
           </Layout>
         </Layout>
       </Layout>
+      <Outlet/>
 
     </div>
   )
